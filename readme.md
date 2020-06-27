@@ -12,6 +12,10 @@ Let's code!
 ## File Structure
 <pre>
 📦wc-theme-boilerplate
+    ┣ 📂ajax
+    ┃ ┗ theme.ajax.php
+    ┣ 📂images
+    ┃ ┗ favicon.png
     ┣ 📂inc
     ┃ ┗ header.php
     ┃ ┗ footer.php
