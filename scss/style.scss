@@ -1,0 +1,146 @@
+// Imports
+// Variables
+$color-primary: #6753ff;
+$color-dark: #191919;
+$color-light: #eeeeee;
+
+$space-small: 15px;
+$space-medium: 30px;
+$space-large: 45px;
+
+$radius: 5px;
+
+$font-small: 14px;
+$font-medium: 18px;
+$font-large: 22px;
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+$font-black: 900;
+
+$general-breakpoint: 768px;
+$container: 1070px;
+
+// Reset
+* {
+    text-rendering: optimizelegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &:focus {
+        outline: none;
+    }
+}
+
+body {
+    background: $color-light;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.container {
+    display: block;
+    max-width: $container;
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+#sample {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        text-align: center;
+        font-size: $font-large;
+        font-weight: $font-black;
+        color: $color-primary;
+        margin-bottom: $space-small/2;
+    }
+    .tagline{
+        text-align: center;
+        font-size: $font-small;
+        margin-bottom: $space-small;
+        font-weight: $font-bold;
+    }
+    .form {
+        width: 320px;
+        display: block;
+        margin: auto;
+        padding: $space-small;
+        background: #ffffff;
+        border-radius: $radius*2;
+        color: #cccccc;
+        h2 {
+            text-align: center;
+            font-size: $font-medium;
+            font-weight: $font-black;
+            color: $color-primary;
+            margin-bottom: $space-small/2;
+        }
+        form{
+            input{
+                padding: $space-small/2;
+                background: $color-dark;
+                color: #ffffff;
+                border: 0px;
+                border-radius: $radius;
+            }
+            button{
+                margin-top: $space-small/2;
+                padding: $space-small/2;
+                width: 100%;
+                font-weight: $font-bold;
+                font-size: $font-small;
+                background: $color-primary;
+                color: #ffffff;
+                border-radius: $radius;
+                border: 0px;
+                cursor: pointer;
+                transition: .3s;
+                &:hover{
+                    opacity: .8;
+                }
+            }
+        }
+    }
+    .button{
+        width: 320px;
+        display: block;
+        margin: auto;
+        padding: $space-small;
+        background: #ffffff;
+        border-radius: $radius*2;
+        color: #cccccc;
+        margin-top: $space-medium;
+        h2 {
+            text-align: center;
+            font-size: $font-medium;
+            font-weight: $font-black;
+            color: $color-primary;
+            margin-bottom: $space-small/2;
+        }
+        button{
+            margin-top: $space-small/2;
+            padding: $space-small/2;
+            width: 100%;
+            font-weight: $font-bold;
+            font-size: $font-small;
+            background: $color-primary;
+            color: #ffffff;
+            border-radius: $radius;
+            border: 0px;
+            cursor: pointer;
+            transition: .3s;
+            &:hover{
+                opacity: .8;
+            }
+        }
+    }
+}

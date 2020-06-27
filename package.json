@@ -1,0 +1,17 @@
+{
+  "name": "wc-theme-boilerplate",
+  "version": "1.0.0",
+  "description": "A Simple WorkControl Theme Boilerplate to automate and standardize our frontend structure.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Let's Code\"",
+    "build-css": "node-sass --include-path scss scss/style.scss wc_css/style.css --output-style compressed",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Luiz Servelo",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1"
+  }
+}
